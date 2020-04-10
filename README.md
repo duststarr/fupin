@@ -44,12 +44,13 @@ git pull
 git push origin master
 ```
 
-## 生成并上传
+## 自动生成并上传
 
 ```bash
 npm run build
 # 1、构建至dist目录
-# 2、将dist上传至45.233.70.235服务器指定目录
+# 2、将dist上传至服务器
+# 3、访问http://fupin.howeaver.cn查看效果
 ```
 
 ## License
