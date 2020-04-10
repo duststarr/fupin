@@ -4,7 +4,6 @@
 
 ## 开始项目
 
-
 ```bash
 # 克隆
 git clone https://gitee.com/xhute/fupin.git
@@ -20,7 +19,7 @@ npm install
 npm run dev
 ```
 
-## Build
+## 生成并上传
 
 ```bash
 npm run build
