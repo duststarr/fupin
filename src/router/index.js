@@ -59,7 +59,7 @@ export const constantRoutes = [
     component: Layout,
     redirect: '/system/user',
     name: 'System',
-    meta: { title: '系统管理', icon: 'example' },
+    meta: { title: '系统管理2', icon: 'example' },
     children: [
       {
         path: 'user',
