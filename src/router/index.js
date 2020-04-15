@@ -55,11 +55,55 @@ export const constantRoutes = [
     }]
   },
   {
+    path: '/analyse',
+    component: Layout,
+    redirect: '/analyse/totality',
+    name: 'Analyse',
+    meta: { title: '可视化分析', icon: 'example' },
+    children: [
+      {
+        path: 'totality',
+        name: 'Totality',
+        component: () => import('@/views/analyse/totality'),
+        meta: { title: '总体分析', icon: 'table' }
+      },
+      {
+        path: 'thinking',
+        name: 'Thinking',
+        component: () => import('@/views/analyse/thinking'),
+        meta: { title: '思想分析', icon: 'tree' }
+      },
+      {
+        path: 'technology',
+        name: 'Technology',
+        component: () => import('@/views/analyse/technology'),
+        meta: { title: '技术分析', icon: 'tree' }
+      },
+      {
+        path: 'healthy',
+        name: 'Healthy',
+        component: () => import('@/views/analyse/healthy'),
+        meta: { title: '身体分析', icon: 'tree' }
+      }
+    ]
+  },
+  {
+    path: '/list',
+    component: Layout,
+    redirect: '/list',
+    children: [{
+      path: 'list',
+      name: 'List',
+      component: () => import('@/views/dashboard/index'),
+      meta: { title: '风险列表', icon: 'dashboard' }
+    }]
+  },
+  {
     path: '/system',
     component: Layout,
     redirect: '/system/user',
     name: 'System',
-    meta: { title: '系统管理2', icon: 'example' },
+    meta: { title: '系统管理', icon: 'example' },
     children: [
       {
         path: 'user',

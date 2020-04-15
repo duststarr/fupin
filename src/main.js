@@ -11,6 +11,11 @@ import '@/styles/index.scss' // global css
 import App from './App'
 import store from './store'
 import router from './router'
+import bus from '@/utils/bus';
+// 引入echarts
+import echarts from "echarts";
+Vue.prototype.$bus = bus
+Vue.prototype.$echarts = echarts;
 
 
 import '@/icons' // icon
